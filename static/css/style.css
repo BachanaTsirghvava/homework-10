@@ -1,0 +1,460 @@
+body{
+    background-color: #000;
+    animation-name: header;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.container{
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+header{
+    animation-name: header;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header{
+    0%{
+        background-color: red;
+    }
+    14.2%{
+        background-color: orangered;
+    }
+    28.4%{
+        background-color: yellow;
+    }
+    42.6%{
+        background-color: green;
+    }
+    56.8%{
+        background-color: blue;
+    }
+    71%{
+        background-color: indigo;
+    }
+    85.2%{
+        background-color: violet;
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+header  nav{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 24px;
+}
+
+header a{
+    color: #000;
+    font-size: 18px;
+}
+
+li a:hover{
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid #000;
+}
+
+.nav-active{
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid #000;
+}
+
+/* home page */
+h1,
+p{
+     margin-top: 30px;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 24px;
+}
+
+.paragraph{
+    height: 50px;
+    transition: height 4s;
+}
+
+.paragraph:hover{
+    border-radius: 30px;
+    height: 100px;
+    color: green;
+    background-color: purple;
+}
+
+/* cat */
+.cat-div{
+    position: relative;
+    top:200px;
+    animation-name: cat;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cat{
+    0% { left:0px; top:100px;}
+  25%  { left:1075px; top:200px;}
+  50%  { left:850px; top:700px;}
+  75%  { left:0px; top:700px;}
+  100% { left:0px; top:200px;}
+}
+
+.cat{
+    display: inline-block;
+    position: relative;
+    background-color: rgb(102, 110, 121);
+}
+
+.cat-body{
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px 50px 50px 50px;
+}
+
+.cat-head{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    left: 80px;
+    top: 30px;
+}
+
+.cat-eye{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+}
+
+.eye1{
+    top: 20px;
+    left: 40px;
+}
+
+.eye2{
+    top: 5px;
+    left: 15px;
+}
+
+.cat-eye div{
+    width: 3px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 80%;
+    position: relative;
+    left: 6px;
+}
+
+.cat-mouth {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: red;
+    left: 30px;
+    top: 8px;
+}
+
+.whiskers{
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 3px;
+    position: relative;
+}
+
+.whisker1{
+    left: 9px;
+    bottom: 2px;
+    rotate: -23deg;
+}
+
+.whisker2{
+    left: 11px;
+}
+
+.whisker3{
+    left: 8px;
+    top: 2px;
+    rotate: 23deg;
+}
+
+.whisker4{
+    right: 18px;
+    bottom: 17px;
+    rotate: 23deg;
+}
+
+.whisker5{
+    right: 20px;
+    bottom: 15px;
+}
+
+.whisker6{
+    right: 17px;
+    bottom: 13px;
+    rotate: -23deg;
+}
+
+.cat-neck{
+    width: 20px;
+    height: 30px;
+    top: 40px;
+    transform: rotate(45deg);
+}
+
+.cat-leg{
+    position: relative;
+    width: 10px;
+    height: 60px;
+    border-radius: 5px;
+    top: 140px;
+    animation-name: cat-legs;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.leg1{
+    right: 40px;
+}
+
+.leg2{
+    right: 75px;
+}
+
+.leg3{
+    right: 165px;
+}
+
+.leg4{
+    right: 200px;
+}
+
+@keyframes cat-legs{
+    0%{
+        rotate: -30deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    60%{
+        rotate: 30deg;
+    }
+    100%{
+        rotate: 0%;
+    }
+}
+
+.cat-tail{
+    width: 10px;
+    height: 100px;
+    border-radius: 10px;
+    right: 270px;
+    top: 45px;
+    transform: rotate(-50deg);
+}
+
+.cat-ear{
+     width: 20px;
+    height: 23px;
+    border-radius: 30px 30px 0 0;
+    bottom: 30px;
+}
+
+.ear1{
+    right: 77px;
+}
+
+.ear2{
+    right: 73px;
+}
+
+/* hypnosis page */
+.hypnosis,
+.circle{
+    border-radius: 50%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hypnosis{
+    position: relative;
+    top: 700px;
+}
+
+.circle{
+    position: absolute;
+}
+
+.black4,
+.black1,
+.black2,
+.black3{
+    background-color: black;
+}
+
+.black4{
+    width: 1400px;
+    height: 1400px;
+    animation-name: seven;
+    animation-delay: 3s;
+}
+
+.black1{
+    width: 1000px;
+    height: 1000px;
+    animation-delay: 11s;
+    animation-name: five;
+    animation-delay: 2s;
+}
+
+.black2{
+    width: 600px;
+    height: 600px;
+    animation-name: three;
+    animation-delay: 1s;
+}
+
+.black3{
+    width: 200px;
+    height: 200px;
+    animation-name: one;
+}
+.white3,
+.white1,
+.white2{
+    background-color: white;
+}
+
+.white3{
+    width: 1200px;
+    height: 1200px;
+    animation-name: six;
+    animation-delay: 2.5s;
+}
+
+.white1
+{   width: 800px;
+    height: 800px;
+    animation-name: four;
+    animation-delay: 1.5s;
+}
+
+.white2{
+    width: 400px;
+    height: 400px;
+    animation-name: two;
+    animation-delay: .5s;
+}
+
+@keyframes one{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    100%{ 
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes two{
+    0%{
+        width: 200px;
+        height: 200px;
+    }
+    100%{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@keyframes three{
+    0%{
+        width: 400px;
+        height: 400px;
+    }
+    100%{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@keyframes four{
+    0%{
+        width: 600px;
+        height: 600px;
+    }
+    100%{
+        width: 800px;
+        height: 800px;
+    }
+}
+
+@keyframes five{
+    0%{
+        width: 800px;
+        height: 800px;
+    }
+    100%{
+        width: 1000px;
+        height: 1000px;
+    }
+}
+
+@keyframes six{
+    0%{
+        width: 1000px;
+        height: 1000px;
+    }
+    100%{
+        width: 1200px;
+        height: 1200px;
+    }
+}
+
+@keyframes seven{
+    0%{
+        width: 1200px;
+        height: 1200px;
+    }
+    100%{
+        width: 1400px;
+        height: 1400px;
+    }
+}
